@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+            ul{
+                position: relative;
+                background: #636eb3;
+            }
+            ul li{
+                display:inline-block ;
+                text-decoration: none;
+                list-style: none;
+                padding: 5px;
+            }
+            ul li a{
+                text-decoration: none;
+                color: #ffffff;
+            }
+
+        @media screen and (max-width:600px){
+            .nav{overflow: hidden;
+            margin: 20px 0;
+            min-height: 40px;}
+            ul{
+                background: #636eb3;
+                width: 180px;
+                padding: 5px 0;
+                position: absolute;
+                left: 0;
+                top: 0;
+                border: 1px solid #aaa;
+                border-radius: 5px;
+                box-shadow: 0 1px 2px #c3c3c3;
+
+            }
+            ul li{
+                display: none;
+                padding: 5px 5px 5px 32px;
+            }
+            ul li:hover{
+                background: #333333;
+                transition:.2s all linear;
+            }
+            .nav .current{
+                display: block;
+            }
+            ul:hover li{
+                display: block;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+<nav class="nav">
+    <ul>
+        <li class="current"><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Abouts</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</body>
+</html>

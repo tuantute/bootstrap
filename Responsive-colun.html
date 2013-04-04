@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        body{
+            margin: 0 auto;
+        }
+        .grid4 .col:nth-of-type(4n+1),
+        .grid3 .col:nth-of-type(3n+1),
+        .grid2 .col:nth-of-type(2n+1){
+            margin-left: 0;
+            padding: 0;
+            clear: left;
+            background: #ff0000;
+
+        }
+
+        .col{
+            background: #dadada;
+        float: left;
+            margin-left:3.2% ;
+            margin-bottom:30px ;
+        }
+        .grid4 .col{
+            width: 22.6%;
+        }
+        .grid3 .col{
+            width: 31.2%;
+        }
+        .grid2 .col{
+            width: 48.4%;
+        }
+        #wrapper{
+            margin: 0 auto;
+            width: 978px;
+            max-width: 96%;
+        }
+        .line{
+            overflow: hidden;
+        }
+/**3 column**/
+        @media screen and (max-width:740px) {
+            .grid4 .col{
+                width: 31.2%;
+            }
+            .grid4 .col:nth-of-type(4n+1){
+                margin-left:3.2% ;
+                clear: none;
+                BACKGROUND: #000;
+            }
+            .grid4 .col:nth-of-type(3n+1){
+                margin-left: 0;
+                clear: left;
+                BACKGROUND: #000;
+
+            }
+
+        }
+
+        @media screen and (max-width:600px) {
+            .grid4 .col{
+                width: 48.4%;
+            }
+            .grid4 .col:nth-of-type(3n+1){
+                margin-left:3.2% ;
+                clear: none;
+                BACKGROUND: #FFF;
+            }
+            .grid4 .col:nth-of-type(2n+1){
+                margin-left: 0;
+                clear: left;
+                BACKGROUND: #34ff34;
+            }
+        }
+        /**full width**/
+        @media screen and (max-width:400px){
+            .col{
+                width: 100%!important;
+                margin-left: 0 !important;
+                clear: none !important;
+
+            }
+
+        }
+        
+        
+
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+<div class="line grid4">
+    <h2>gird 4</h2>
+    <div class="col">Name1</div>
+    <div class="col">Name2</div>
+    <div class="col">Name3</div>
+    <div class="col">Name4</div>
+    <div class="col">Name5</div>
+    <div class="col">Name6</div>
+    <div class="col">Name7</div>
+    <div class="col">Name8</div>
+</div>
+<div class="line grid3">
+    <h2>grid 3</h2>
+    <div class="col">Name1</div>
+    <div class="col">Name2</div>
+    <div class="col">Name3</div>
+    <div class="col">Name4</div>
+    <div class="col">Name5</div>
+
+</div>
+<div class="line grid2">
+    <h2>grid 2</h2>
+    <div class="col">Name1</div>
+    <div class="col">Name2</div>
+    <div class="col">Name3</div>
+    <div class="col">Name4</div>
+</div>
+<div class="full">
+    <div class="col">Name1</div>
+
+</div>
+    </div>
+</body>
+</html>
